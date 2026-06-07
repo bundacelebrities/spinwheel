@@ -86,7 +86,7 @@
         /* ── MAIN CONTAINER ── */
         .app {
             width: 100%;
-            max-width: 440px;
+            max-width: 480px;
             height: 100vh;
             max-height: 900px;
             position: relative;
@@ -110,7 +110,7 @@
             font-size: 0.65rem;
             font-weight: 700;
             letter-spacing: 2px;
-            padding: 3px 10px;
+            padding: 4px 10px;
             border-radius: 3px;
             animation: livePulse 1.2s ease-in-out infinite;
         }
@@ -196,7 +196,7 @@
             background: rgba(255, 210, 0, 0.08);
             border: 1px solid rgba(255, 210, 0, 0.25);
             padding: 5px 12px;
-            border-radius: 20px;
+            border-radius: 50px;
             font-family: 'Orbitron', sans-serif;
             font-size: 0.75rem;
             color: var(--gold);
@@ -217,7 +217,7 @@
             font-size: 0.6rem;
             letter-spacing: 3px;
             color: white;
-            animation: ticker 30s linear infinite;
+            animation: ticker 35s linear infinite;
         }
 
         @keyframes ticker {
@@ -351,7 +351,7 @@
             font-size: 1.6rem;
             letter-spacing: 4px;
             padding: 18px 24px;
-            border-radius: 12px;
+            border-radius: 50px;
             width: 100%;
             border: none;
             cursor: pointer;
@@ -366,9 +366,9 @@
             left: -60%;
             width: 40%;
             height: 200%;
-            background: rgba(255, 255, 255, 0.25);
+            background: rgba(255, 255, 255, 0.226);
             transform: skewX(-20deg);
-            animation: sheen 3s ease-in-out infinite;
+            animation: sheen 6s ease-in-out infinite;
         }
 
         @keyframes sheen {
@@ -467,8 +467,8 @@
 
         .participant-name {
             flex: 1;
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 0.90rem;
+            font-weight: 100;
             color: var(--text);
         }
 
@@ -548,7 +548,7 @@
             background: conic-gradient(rgba(255, 10, 10, 0.25) 0deg, rgba(255, 210, 0, 0.25) 90deg,
                     rgba(255, 10, 10, 0.25) 180deg, rgba(255, 210, 0, 0.25) 270deg, rgba(255, 10, 10, 0.25) 360deg);
             filter: blur(20px);
-            animation: rotateRing 20s linear infinite;
+            animation: rotateRing 10s linear infinite;
         }
 
         @keyframes rotateRing {
@@ -559,14 +559,14 @@
 
         .wheel-pointer {
             position: absolute;
-            top: -8px;
+            top: -5px;
             left: 50%;
             width: 0;
             height: 0;
             transform: translateX(-50%);
-            border-left: 20px solid transparent;
-            border-right: 20px solid transparent;
-            border-top: 30px solid #FFD700;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 30px solid #ffffff;
             z-index: 10;
             filter: drop-shadow(0 0 10px var(--gold));
         }
@@ -587,7 +587,7 @@
             text-align: center;
             margin-top: 8px;
             z-index: 6;
-            text-shadow: 0 0 12px rgba(255,210,0,0.6);
+            text-shadow: 0 0 12px rgba(255, 210, 0, 0.6);
         }
 
         /* ── HISTORY ── */
@@ -614,7 +614,7 @@
         }
 
         .history-list {
-            max-height: 90px;
+            max-height: 100px;
             overflow-y: auto;
             padding: 6px 0;
         }
@@ -642,7 +642,8 @@
 
         .history-rank {
             color: var(--gold);
-            font-weight: 700;
+            font-size: 0.65rem;
+            font-weight: 100;
             min-width: 28px;
         }
 
@@ -779,14 +780,14 @@
         .winner-frame::before {
             top: -2px;
             left: -2px;
-            border-width: 3px 0 0 3px;
+            border-width: 0 0 0 0;
             border-radius: 4px 0 0 0;
         }
 
         .winner-frame::after {
             bottom: -2px;
             right: -2px;
-            border-width: 0 3px 3px 0;
+            border-width: 0 0 0 0;
             border-radius: 0 0 4px 0;
         }
 
@@ -1029,7 +1030,8 @@
 
         <!-- ══ TICKER ══ -->
         <div class="ticker-wrap">
-            <span class="ticker-text">✦ KARIBU BUNDA CELEBRITIES SPIN WHEEL 2026 ✦ ANDIKA JINA LAKO KWENYE COMMENT USHIRIKI LIVE ✦ MSHINDI
+            <span class="ticker-text">✦ KARIBU BUNDA CELEBRITIES SPIN WHEEL 2026 ✦ ANDIKA JINA LAKO KWENYE COMMENT
+                USHIRIKI LIVE ✦ MSHINDI
                 ATACHAGULIWA NDANI YA MZUNGUKO ✦ FOLLOW, LIKE &amp; SHARE ✦ HATUA MOJA KUTOKA USHINDI ✦</span>
         </div>
 
@@ -1059,7 +1061,7 @@
 
             <div class="reg-footer">
                 <button class="btn btn-spin" id="proceedBtn" disabled>
-                    <i class="fas fa-gamepad"></i> &nbsp;INGIA MCHEZO
+                    <i class="fas fa-gamepad"></i> &nbsp;ANZISHA MCHEZO
                 </button>
             </div>
         </div>
@@ -1101,7 +1103,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <canvas id="spinWheel" width="280" height="280"></canvas>
+                    <canvas id="spinWheel" width="290" height="290"></canvas>
                 </div>
                 <div class="countdown" id="countdown">01:00</div>
                 <div class="wheel-status" id="wheelStatus">▸ READY TO SPIN</div>
@@ -1122,7 +1124,7 @@
 
             <div class="game-footer">
                 <button class="btn btn-spin" id="spinBtn">
-                    <i class="fas fa-compact-disc"></i>&nbsp; ZUNGUSHA
+                    <i class="fas fa-compact-disc"></i>&nbsp; START
                 </button>
             </div>
         </div>
@@ -1146,12 +1148,12 @@
             <div class="winner-tagline">
                 <i class="fas fa-crown"></i>&nbsp; WEWE NI MFALME / MALKIA &nbsp;<i class="fas fa-crown"></i>
             </div>
-            <div class="winner-swahili">Una bahati leo — endelea kutazama live! Tuone kama Utashinda tena.</div>
+            <div class="winner-swahili">Una bahati leo. Endelea kutazama live! Tuone kama Utashinda tena.</div>
             <div class="winner-branding">BUNDA CELEBRITIES · LIVE SHOW EDITION</div>
 
             <div class="winner-actions">
                 <button class="btn btn-gold" id="spinAgainBtn" style="flex:1;padding:14px">
-                    <i class="fas fa-redo"></i>&nbsp; Zungushia Tena
+                    <i class="fas fa-redo"></i>&nbsp; Spin Again
                 </button>
                 <button class="btn btn-red" id="resetBtn" style="flex:1;padding:14px">
                     <i class="fas fa-sync"></i>&nbsp; Restart
@@ -1165,17 +1167,17 @@
     <div class="modal-bg" id="manageModal">
         <div class="modal-sheet">
             <div class="modal-handle"></div>
-            <div class="modal-title"><i class="fas fa-users-cog"></i>&ensp;SIMAMIA WASHIRIKI</div>
+            <div class="modal-title"><i class="fas fa-users-cog"></i>&ensp;WASHIRIKI</div>
 
             <div class="input-row" style="margin-bottom:14px">
                 <input type="text" class="field" id="addMidInput" placeholder="Ongeza wakati wa mchezo..."
-                    maxlength="22">
+                    maxlength="24">
                 <button class="btn btn-gold" id="addMidBtn" style="padding:12px 16px;border-radius:8px">
                     <i class="fas fa-plus"></i>
                 </button>
             </div>
 
-            <div id="manageList" class="participants-scroll" style="max-height:320px"></div>
+            <div id="manageList" class="participants-scroll" style="max-height:350px"></div>
 
             <button class="btn btn-ghost" id="closeModal" style="width:100%;margin-top:14px;padding:12px">
                 <i class="fas fa-times"></i>&ensp;Funga
@@ -1624,12 +1626,12 @@
             const slice = (2 * Math.PI) / n;
             const winnerIdx = Math.floor(Math.random() * n);
 
-            const totalRot = 100 * 2 * Math.PI; // 100 full rotations
+            const totalRot = 70 * 2 * Math.PI; // 100 full rotations
             const pointerAngle = -Math.PI / 2;
             const winnerCenterAngle = winnerIdx * slice + slice / 2;
             const finalRot = S.rot + totalRot + (pointerAngle - winnerCenterAngle - S.rot % (2 * Math.PI));
 
-            const duration = 60000;  // ← Hii ni milliseconds (60000 = 60 sekunde)
+            const duration = 62000;  // ← Hii ni milliseconds (60000 = 60 sekunde)
             const start = performance.now();
             const startRot = S.rot;
 
